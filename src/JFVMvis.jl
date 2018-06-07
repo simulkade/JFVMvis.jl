@@ -1,6 +1,6 @@
 module JFVMvis
 
-using PyPlot
+using JFVM, PyPlot
 
 export visualizeCells, visualizeCellVectors
 
