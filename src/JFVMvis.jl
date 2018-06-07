@@ -1,4 +1,4 @@
-module JFVMviz
+module JFVMvis
 
 using PyPlot
 
