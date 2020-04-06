@@ -1,0 +1,9 @@
+name = "JFVMvis"
+uuid = "a8ca9cd4-68e5-5638-b0e9-a2bb7b38c666"
+version = "0.0.1"
+[deps]
+JFVM = "d32f81f0-000d-5c7c-8375-24efa40f8589"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+
+[compat]
+julia = "≥ 0.6.0"
