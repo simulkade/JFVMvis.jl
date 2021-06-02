@@ -174,12 +174,12 @@ if d==1 || d==1.5
 elseif d==2 || d==2.5
   x = phi.domain.cellcenters.x
   y = phi.domain.cellcenters.y
-  quiver(repmat(x, 1, length(y)), repmat(y', length(x), 1), phi.xvalue, phi.yvalue)
+  quiver(repeat(x, 1, length(y)), repeat(y', length(x), 1), phi.xvalue, phi.yvalue)
 elseif d==2.8
   x = phi.domain.cellcenters.x
   y = phi.domain.cellcenters.y'
   subplot(111, polar="true")
-  quiver(repmat(y, length(x), 1), repmat(x, 1, length(y)),
+  quiver(repeat(y, length(x), 1), repeat(x, 1, length(y)),
   phi.xvalue.*cos(y)-phi.yvalue.*sin(y), phi.xvalue.*sin(y)+phi.yvalue.*cos(y))
 elseif d==3
   Nx = phi.domain.dims[1]
