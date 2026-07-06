@@ -1,9 +1,19 @@
 name = "JFVMvis"
 uuid = "a8ca9cd4-68e5-5638-b0e9-a2bb7b38c666"
-version = "0.0.1"
+version = "0.1.0"
+
 [deps]
 JFVM = "d32f81f0-000d-5c7c-8375-24efa40f8589"
-PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 
 [compat]
-julia = "≥ 0.6.0"
+JFVM = "1.2.0"
+Makie = "0.22"
+julia = "1.10"
+
+[extras]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "CairoMakie"]
