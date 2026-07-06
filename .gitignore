@@ -1,0 +1,5 @@
+# Package Manifest is environment-specific and resolved by the user.
+/Manifest.toml
+
+# Makie/test render output
+*.png
